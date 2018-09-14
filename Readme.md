@@ -1,9 +1,7 @@
 Summary
 ===== 
 
-This is Mati's exam implementation using Keras. __The result is 69% of the test captchas were correct.__ The main trick was to augment the training data, as well as using augmented test images statistics to further improve the evaluation. As well as obvious resolution decrease for the network to be able to train. 
-
-__Note:__ Reached 76% using 250 epochs instead of 100, and 78% With adding extra 40K augmentations and another 200 epochs. 
+This is Mati's exam implementation using Keras. __The best result is 78% of the test captchas were correct.__ The main trick was to augment the training data, as well as using augmented test images statistics to further improve the evaluation. As well as obvious resolution decrease for the network to be able to train. 
 
 Steps to reproduce: 
 ====== 
@@ -43,3 +41,5 @@ Notes
 - Improving it further might helpped by some more augmented images. This is not the best approach but it could help further. 
 
 - Other approaches could include artificially generating more similiar data (for example by using GAN or writing code to generate captchas). 
+
+- 78% were achieved after 450 epochs and 80K (instead of 40K) augmented train images. 
