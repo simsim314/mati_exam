@@ -1,4 +1,4 @@
-Summery
+Summary
 ===== 
 
 This is Mati's exam implementation using Keras. __The result is 69% of the test captchas were correct.__ The main trick was to augment the training data, as well as using augmented test images statistics to further improve the evaluation. As well as obvious resolution decrease for the network to be able to train. 
