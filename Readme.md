@@ -1,12 +1,18 @@
+Summery
+===== 
+
+This is Mati's exam implementation using Keras. __The result is 69% of the test captchas were correct.__ The main trick was to augment the training data, as well as using augmented test images statistics to further improve the evaluation. As well as obvious resolution decrease for the network to be able to train. 
+
 Steps to reproduce: 
+====== 
 
 0. Download the repository to your local drive. 
-1. Copy labeled capcha to repository into directory 'data/labeled_capcha'
+1. Copy labeled capcha to repository into directory 'data/labeled_capcha' on you local drive. 
 2. Run data_preproccess.py - fix the issues. Check 'data' directory, it should have 4 new directories filled with images. 
-3. Run train.py if you want to train from scratch (you can also skip this step and use existing model located in models directory)
-4. Run test.py to get report of predicted test images - each image is augmented 10 times. 
+3. Run train.py to train. 
+4. Run test.py to get report of predicted test images. The final line in the report shows the percentile of succesful captcha. 
 
-
+Working progress
 =======
 
 0. For starters I wanted to see what happens when I train a network on the data as is. So I have an array of images as input and the output 
